@@ -1,0 +1,89 @@
+ /* Reset default margin for headings */
+ h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(45deg, #966767, #ffa7a7); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container for users and posts */
+#content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* User container styling */
+#users {
+    width: 30%;
+    max-height: 600px; /* Set a max height for scrolling */
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    /* background-color: #f9f9f9; */
+}
+
+/* Individual user styling */
+.user {
+    background-color: #f0f0f0;
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 14px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+/* User hover effect */
+.user:hover {
+    background-color: #4e7272;
+    color: #fff;
+}
+
+/* Styling for selected user */
+.user.selected {
+    border: solid 4px #fdf07c;
+}
+
+/* Posts container styling */
+#posts-container {
+    width: 70%;
+    max-height: 600px; /* Set a max height for scrolling */
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #ececec;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual post styling */
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    /* color: #81045c; */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Post hover effect */
+.post:hover {
+    transform: translateY(-5px);
+}
+
+/* Divider between post title and content */
+.post hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
